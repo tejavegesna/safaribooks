@@ -177,3 +177,9 @@ In this case, I suggest you to convert the `EPUB` to `AZW3` with Calibre or to `
 For any kind of problem, please don't hesitate to open an issue here on *GitHub*.  
   
 *Lorenzo Di Fuccia*
+
+### Get Cookies
+
+```
+console.log(JSON.stringify(document.cookie.split(';').map(c => c.split('=')).map(i => [i[0].trim(), i[1].trim()]).reduce((r, i) => {r[i[0]] = i[1]; return r;}, {})))
+```

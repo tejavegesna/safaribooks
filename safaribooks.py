@@ -21,12 +21,12 @@ from urllib.parse import urljoin, urlparse, parse_qs, quote_plus
 PATH = os.path.dirname(os.path.realpath(__file__))
 COOKIES_FILE = os.path.join(PATH, "cookies.json")
 
-ORLY_BASE_HOST = "oreilly.com"  # PLEASE INSERT URL HERE
+ORLY_BASE_HOST = "oreilly.com"  # PLEASE INSERT URL HERE JUST HOST NAME
 
-SAFARI_BASE_HOST = "learning." + ORLY_BASE_HOST
+SAFARI_BASE_HOST = ORLY_BASE_HOST
 API_ORIGIN_HOST = "api." + ORLY_BASE_HOST
 
-ORLY_BASE_URL = "https://www." + ORLY_BASE_HOST
+ORLY_BASE_URL = "https://" + ORLY_BASE_HOST
 SAFARI_BASE_URL = "https://" + SAFARI_BASE_HOST
 API_ORIGIN_URL = "https://" + API_ORIGIN_HOST
 PROFILE_URL = SAFARI_BASE_URL + "/profile/"
