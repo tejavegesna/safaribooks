@@ -178,7 +178,7 @@ For any kind of problem, please don't hesitate to open an issue here on *GitHub*
   
 *Lorenzo Di Fuccia*
 
-### Get Cookies
+### Get Cookies from website in https://{HOST}/profile & paste in cookies.json
 
 ```
 console.log(JSON.stringify(document.cookie.split(';').map(c => c.split('=')).map(i => [i[0].trim(), i[1].trim()]).reduce((r, i) => {r[i[0]] = i[1]; return r;}, {})))
