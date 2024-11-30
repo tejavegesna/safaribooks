@@ -1,3 +1,11 @@
-lxml>=4.1.1
-requests>=2.20.0
-
+beautifulsoup4==4.12.3
+bs4==0.0.2
+certifi==2022.6.15
+charset-normalizer==2.0.12
+idna==3.3
+lxml==4.9.1
+requests==2.26.0
+soupsieve==2.6
+tinycss2==1.4.0
+urllib3==1.26.6
+webencodings==0.5.1
