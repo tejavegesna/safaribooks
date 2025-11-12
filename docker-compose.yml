@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  safaribooks:
+    build: .
+    entrypoint: "sleep infinity" # /safaribooks/safaribooks.py <book_id like 9781098166298>
+    volumes:
+       - ./:/safaribooks
+    working_dir: /safaribooks

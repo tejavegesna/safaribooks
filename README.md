@@ -181,5 +181,6 @@ For any kind of problem, please don't hesitate to open an issue here on *GitHub*
 ### Get Cookies from website in https://{HOST}/profile & paste in cookies.json
 
 ```
+allow pasting
 console.log(JSON.stringify(document.cookie.split(';').map(c => c.split('=')).map(i => [i[0].trim(), i[1].trim()]).reduce((r, i) => {r[i[0]] = i[1]; return r;}, {})))
 ```
